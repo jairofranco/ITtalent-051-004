@@ -30,3 +30,4 @@ descripcion_contenedor VARCHAR not null
 Create table tip
 (nombre_tip not null
 );
+

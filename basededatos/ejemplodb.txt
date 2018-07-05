@@ -1,0 +1,16 @@
+Create table usuario
+(numero_usuario SERIAL PRIMARY KEY,
+nombre_usuario TEXT,
+localizacion_usuario TEXT,
+email_usuario VARCHAR,
+rol TEXT,
+contraseña_usuario TEXT
+);
+
+Create table residuo
+(nombre_residuo TEXT,
+material_residuo TEXT,
+descripcion_residuo VARCHAR,
+foto_residuo FOTO
+
+);

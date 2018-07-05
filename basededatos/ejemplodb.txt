@@ -1,32 +1,32 @@
 Create table usuario
 (numero_usuario SERIAL PRIMARY KEY,
-nombre_usuario TEXT,
-localizacion_usuario TEXT,
-email_usuario VARCHAR,
-rol TEXT,
-contraseña_usuario TEXT
+nombre_usuario TEXT not null,
+localizacion_usuario TEXT not null,
+email_usuario VARCHAR not null,
+rol TEXT not null,
+contraseña_usuario TEXT not null
 );
 
 Create table residuo
-(nombre_residuo TEXT,
-material_residuo TEXT,
-descripcion_residuo VARCHAR,
-foto_residuo FOTO
+(nombre_residuo TEXT not null,
+material_residuo TEXT not null,
+descripcion_residuo VARCHAR not null,
+foto_residuo FOTO not null
 
 );
 
 Create table punto_acopio
-(nombre_punto TEXT,
-ubicacion_punto TEXT,
-tipo_residuo TEXT
+(nombre_punto TEXT not null,
+ubicacion_punto TEXT not null,
+tipo_residuo TEXT not null
 
 );
 CREATE TABLE contenedor
-(color_contenedor TEXT,
-nombre_contenedor TEXT,
-descripcion_contenedor VARCHAR
+(color_contenedor TEXT not null,
+nombre_contenedor TEXT not null,
+descripcion_contenedor VARCHAR not null
 );
 
 Create table tip
-(nombre_tip
+(nombre_tip not null
 );

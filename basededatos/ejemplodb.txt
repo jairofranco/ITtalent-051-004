@@ -14,3 +14,19 @@ descripcion_residuo VARCHAR,
 foto_residuo FOTO
 
 );
+
+Create table punto_acopio
+(nombre_punto TEXT,
+ubicacion_punto TEXT,
+tipo_residuo TEXT
+
+);
+CREATE TABLE contenedor
+(color_contenedor TEXT,
+nombre_contenedor TEXT,
+descripcion_contenedor VARCHAR
+);
+
+Create table tip
+(nombre_tip
+);

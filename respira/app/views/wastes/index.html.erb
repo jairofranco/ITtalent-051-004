@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Wastes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Waste name</th>
+      <th>Waste material</th>
+      <th>Waste description</th>
+      <th>Waste img</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wastes.each do |waste| %>
+      <tr>
+        <td><%= waste.waste_name %></td>
+        <td><%= waste.waste_material %></td>
+        <td><%= waste.waste_description %></td>
+        <td><%= waste.waste_img %></td>
+        <td><%= link_to 'Show', waste %></td>
+        <td><%= link_to 'Edit', edit_waste_path(waste) %></td>
+        <td><%= link_to 'Destroy', waste, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Waste', new_waste_path %>
